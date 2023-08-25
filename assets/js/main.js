@@ -24,36 +24,36 @@ let buzz = "Buzz";
 const ulElement = document.querySelector('.lista');
 let liItem = document.createElement('li');
 
-for ( let i = 1; i <= 100; i++){
-    if (i % 3 === 0 && i % 5 == 0){
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 == 0) {
 
         liItem = document.createElement('li');
         liItem.append(fizz + buzz);
         liItem.classList.add("fizzbuzz");
-        
+
     } else if (i % 3 === 0) {
 
         liItem = document.createElement('li');
         liItem.append(fizz);
         liItem.classList.add("fizz");
-        
+
     } else if (i % 5 === 0) {
 
         liItem = document.createElement('li');
         liItem.append(buzz);
         liItem.classList.add("buzz");
-        
+
     } else {
 
         liItem = document.createElement('li');
         liItem.append(i);
-        
+
     }
-    
-    
+
+
     ulElement.append(liItem);
-    liItem.classList.add("col-2")
-    
+    liItem.classList.add("col-2", "d-flex");
+
 }
 
 
