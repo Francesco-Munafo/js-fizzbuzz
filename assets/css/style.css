@@ -1,9 +1,15 @@
+main{
+    background-color: firebrick;
+}
+
 li{
     background-color: cornflowerblue;
     padding: 1rem;
     list-style: none;
     text-align: center;
-    
+    padding-top: 80px;
+    font-size: 2rem;
+    font-weight: 500;
     aspect-ratio: 1 / 1;
 }
 
