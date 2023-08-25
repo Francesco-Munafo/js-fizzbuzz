@@ -1,0 +1,20 @@
+li{
+    background-color: cornflowerblue;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    
+    aspect-ratio: 1 / 1;
+}
+
+.fizz{
+    background-color: sandybrown;
+}
+
+.buzz{
+    background-color: palegreen;
+}
+
+.fizzbuzz{
+    background-color: violet;
+}

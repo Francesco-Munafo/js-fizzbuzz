@@ -21,7 +21,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 let fizz = "Fizz";
 let buzz = "Buzz";
 // Creo la variabile per poter riportare gli elementi in pagina
-const ulElement = document.getElementById('lista');
+const ulElement = document.querySelector('.lista');
 let liItem = document.createElement('li');
 
 for ( let i = 1; i <= 100; i++){
@@ -29,30 +29,34 @@ for ( let i = 1; i <= 100; i++){
 
         liItem = document.createElement('li');
         liItem.append(fizz + buzz);
-        console.log(fizz + buzz);
+        liItem.classList.add("fizzbuzz");
+        
     } else if (i % 3 === 0) {
 
         liItem = document.createElement('li');
         liItem.append(fizz);
-        console.log(fizz);
-
+        liItem.classList.add("fizz");
+        
     } else if (i % 5 === 0) {
 
         liItem = document.createElement('li');
         liItem.append(buzz);
-        console.log(buzz);
-
+        liItem.classList.add("buzz");
+        
     } else {
 
         liItem = document.createElement('li');
         liItem.append(i);
-        console.log(i);
+        
     }
     
     
     ulElement.append(liItem);
+    liItem.classList.add("col-2")
     
 }
+
+
 
 
 
